@@ -1,0 +1,25 @@
+<odoo>
+
+    <!-- Lift Type II -->
+    <record id="lift_type_lmr_geared" model="lift.type.two">
+        <field name="name">LMR Geared</field>
+    </record>
+    <record id="lift_type_geared_mrl" model="lift.type.two">
+        <field name="name">Geared MRL</field>
+    </record>
+    <record id="lift_type_gearless_mrl" model="lift.type.two">
+        <field name="name">Gearless MRL</field>
+    </record>
+    <record id="lift_type_lmr_gearless" model="lift.type.two">
+        <field name="name">LMR Gearless</field>
+    </record>
+    <record id="lift_type_hydraulic" model="lift.type.two">
+        <field name="name">Hydraulic</field>
+    </record>
+    <record id="lift_type_champion" model="lift.type.two">
+        <field name="name">Champion</field>
+    </record>
+    <record id="lift_type_dump_waiter" model="lift.type.two">
+        <field name="name">Dump Waiter</field>
+    </record>
+</odoo>

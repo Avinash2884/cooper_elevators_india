@@ -1,0 +1,22 @@
+<odoo>
+    <data>
+        <record id="lift_type_passenger" model="lift.type">
+            <field name="name">Passenger</field>
+        </record>
+        <record id="lift_type_goods" model="lift.type">
+            <field name="name">Goods</field>
+        </record>
+        <record id="lift_type_hospital" model="lift.type">
+            <field name="name">Hospital</field>
+        </record>
+        <record id="lift_type_commercial" model="lift.type">
+            <field name="name">Commercial</field>
+        </record>
+        <record id="lift_type_residential" model="lift.type">
+            <field name="name">Residential</field>
+        </record>
+        <record id="lift_type_school" model="lift.type">
+            <field name="name">School</field>
+        </record>
+    </data>
+</odoo>

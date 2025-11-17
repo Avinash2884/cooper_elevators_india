@@ -1,0 +1,15 @@
+<odoo>
+    <data noupdate="1">
+
+        <record id="seq_price_list_lift" model="ir.sequence">
+            <field name="name">Lift Name Sequence</field>
+            <field name="code">price.list</field>
+            <field name="prefix"></field>
+            <field name="padding">4</field>
+            <field name="number_next">1</field>
+            <field name="number_increment">1</field>
+        </record>
+
+
+    </data>
+</odoo>

@@ -1,0 +1,118 @@
+<odoo>
+    <data>
+
+        <record id="crm_lead_view_form_inherit_technical_spec" model="ir.ui.view">
+            <field name="name">crm.lead.form.inherit.technical.spec</field>
+            <field name="model">crm.lead</field>
+            <field name="inherit_id" ref="crm.crm_lead_view_form"/>
+            <field name="arch" type="xml">
+                <!-- Inherit inside the existing notebook -->
+                <xpath expr="//notebook" position="inside">
+                    <page string="Price List" name="price_list">
+                        <group string="Price List Table">
+                            <field name="quotation_template_crm_id"/>
+                            <field name="price_list_ids" string="">
+                                <list create="true" edit="true">
+                                    <field name="name"/>
+                                    <field name="quantity"/>
+                                    <field name="base_price" string="Unit Price"/>
+                                    <field name="grand_total" string="Total Price"/>
+                                </list>
+                                <form>
+                                    <sheet>
+                                        <group>
+                                            <group string="Lift Details">
+                                                <field name="quantity"/>
+                                                <field name="capacity"/>
+                                                <field name="capacity_amount" invisible="0"/>
+                                                <field name="speed"/>
+                                                <field name="speed_amount" invisible="0"/>
+                                                <field name="stop"/>
+                                                <field name="stop_amount" invisible="0"/>
+                                                <field name="door_opening"/>
+                                                <field name="door_opening_amount" invisible="0"/>
+                                                <field name="additional_travel"/>
+                                                <field name="additional_travel_amount" invisible="0"/>
+                                                <field name="base_price"/>
+                                                <field name="extras"/>
+                                                <field name="grand_total"/>
+                                                <field name="margin_grand_total"/>
+                                                <field name="margin_amount"/>
+                                                <field name="base_price_tax_id"/>
+                                            </group>
+                                            <group string="">
+                                                <field name="mrl_amount"/>
+                                                <field name="cabin"/>
+                                                <field name="cabin_amount" invisible="0"/>
+                                                <field name="cabin_extra_for_gold"/>
+                                                <field name="cabin_extra_for_gold_amount" invisible="0"/>
+                                                <field name="cabin_total_amount" invisible="0"/>
+                                                <field name="automatic_doors"/>
+                                                <field name="automatic_doors_amount" invisible="0"/>
+                                                <field name="automatic_doors_extra_for_gold"/>
+                                                <field name="automatic_doors_extra_for_gold_amount" invisible="0"/>
+                                                <field name="automatic_doors_total_amount" invisible="0"/>
+                                                <field name="scaffolding"/>
+                                                <field name="scaffolding_amount" invisible="0"/>
+                                                <field name="door_height"/>
+                                                <field name="door_height_amount" invisible="0"/>
+                                                <field name="license_amount" />
+                                                <field name="free_amc_amount"/>
+                                                <field name="storage"/>
+                                                <field name="storage_amount" invisible="0"/>
+                                                <field name="other_city"/>
+                                                <field name="other_city_amount" invisible="0"/>
+                                            </group>
+                                        </group>
+                                        <group>
+                                            <group string="Technical Specification">
+                                                <field name="type_of_lift_one_ids" widget="many2many_checkboxes"/>
+                                                <field name="type_of_lift_two_ids" widget="many2many_checkboxes"/>
+                                                <field name="no_of_stop_opening"/>
+                                                <field name="type_of_door_opening"/>
+                                                <field name="type_of_door_required_in_hoist_way"/>
+                                                <field name="type_of_landing_door_finish_required_in_hoist_way"/>
+                                                <field name="type_of_cabin_door_finish_required_in_hoist_way"/>
+                                                <field name="type_of_cabin_finish_required_in_hoist_way"/>
+                                            </group>
+                                            <group string="">
+                                                <field name="lift_well_width"/>
+                                                <field name="lift_well_depth"/>
+                                                <field name="lift_car_width"/>
+                                                <field name="lift_car_height"/>
+                                                <field name="door_opening_width"/>
+                                                <field name="door_opening_height"/>
+                                                <field name="type_of_source"/>
+                                                <field name="price"/>
+                                                <field name="remarks"/>
+                                                <field name="site_status"/>
+                                            </group>
+                                        </group>
+                                        <group>
+                                            <group string="Payment and Terms">
+                                                <field name="payment_terms"/>
+                                                <field name="payment_terms_type"/>
+                                                <field name="payment_terms_note"/>
+                                            </group>
+                                            <group string="Delivery and Installation Schedule">
+                                                <field name="delivery_schedule"/>
+                                                <field name="delivery_schedule_week"/>
+                                                <field name="installation_schedule"/>
+                                                <field name="installation_schedule_week"/>
+                                            </group>
+                                        </group>
+                                    </sheet>
+                                </form>
+                            </field>
+                        </group>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="crm.crm_menu_sales" model="ir.ui.menu">
+            <field name="name">Sales Enquiry</field>
+        </record>
+
+    </data>
+</odoo>
