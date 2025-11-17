@@ -67,7 +67,6 @@ class PriceList(models.Model):
     )
 
     # MRL
-    mrl = fields.Integer(string="MRL", store=True)
     mrl_amount = fields.Integer(string="MRL",compute="_compute_mrl_amount", store=True)
 
     # Cabin
