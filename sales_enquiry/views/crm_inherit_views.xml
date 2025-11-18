@@ -13,7 +13,6 @@
                 <xpath expr="//notebook" position="inside">
                     <page string="Price List" name="price_list">
                         <group string="Price List Table">
-                            <field name="quotation_template_crm_id" invisible="1"/>
                             <field name="price_list_ids" string="">
                                 <list create="true" edit="true">
                                     <field name="name"/>
