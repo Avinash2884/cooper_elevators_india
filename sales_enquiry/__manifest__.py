@@ -3,7 +3,7 @@
 {
     'name': "Sales Enquiry",
     'version': '1.0.0',
-    'depends': ['base','crm','sale_crm','sale','account'],
+    'depends': ['base','crm','sale_management','product','mail'],
     'author': "Unisas ITBusiness Solutions Private Limited",
     'category': 'Sales/CRM',
     'summary': "Manage and track sales enquiries with quantity and pricing details",
