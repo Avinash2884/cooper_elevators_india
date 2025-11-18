@@ -3,4 +3,3 @@ from . import price_list
 from . import lift_type_one
 from . import lift_type_two
 from . import sale_order_inherit
-from . import quotation_template_crm

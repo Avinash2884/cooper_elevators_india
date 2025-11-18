@@ -2,6 +2,4 @@ id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_price_list,access.price.list,model_price_list,base.group_user,1,1,1,1
 access_lift_type,access.lift.type,model_lift_type,base.group_user,1,1,1,1
 access_lift_type_two,access.lift.type.two,model_lift_type_two,base.group_user,1,1,1,1
-access_quotation_template_crm,access.quotation.template.crm,model_quotation_template_crm,base.group_user,1,1,1,1
-
 
