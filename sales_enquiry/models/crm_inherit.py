@@ -4,7 +4,6 @@ class CrmInherit(models.Model):
     _inherit = 'crm.lead'
 
     price_list_ids = fields.One2many('price.list', 'crm_inherit_id',)
-    quotation_template_crm_id = fields.Many2one("quotation.template.crm", string="Quotation Template")
     sale_order_template_id= fields.Many2one("sale.order.template", string="Quotation Template")
 
     def action_sale_quotations_new(self):
